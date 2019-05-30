@@ -22,6 +22,7 @@ public class Ejemplo31 {
         int cont = 1;
         int op;
         double[] valid = new double[6];
+        String[] rangos = {"20-mas","19.1-20","16.1-19","12.1-16","8.1-12","0-8"};
         // ciclo repetitivo para preguntar al usuario
         while (bandera == true) {
             System.out.printf("Ingrese las notas del estudiante\n");
@@ -54,9 +55,8 @@ public class Ejemplo31 {
             }
     }
         // Impresion de resultados
-         System.out.printf("Notas Ingresadas\n\nRangos\n0-8 = %.2f\n"
-                    + "8.1-12 = %.2f\n12.1-16 = %.2f\n16.1-19 = %.2f\n"
-                    + "19.1-20 = %.2f\n20-mas = %.2f\n", valid[5], valid[4],
-                    valid[3], valid[2], valid[1], valid[0]);
+       for(int i = 0; i < valid.length;i++){
+           System.out.printf("%s = %.2f\n", rangos[i], valid[i]); 
+       }
     }
 }
