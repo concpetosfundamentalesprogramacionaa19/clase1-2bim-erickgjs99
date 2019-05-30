@@ -53,10 +53,10 @@ public class Ejemplo31 {
             if(op == 2){
                 bandera = false;
             }
-    }
+        }
         // Impresion de resultados
        for(int i = 0; i < valid.length;i++){
-           System.out.printf("%s = %.2f\n", rangos[i], valid[i]); 
+           System.out.printf("Notas ingresadas\n%s = %.2f\n", rangos[i], valid[i]); 
        }
     }
 }
