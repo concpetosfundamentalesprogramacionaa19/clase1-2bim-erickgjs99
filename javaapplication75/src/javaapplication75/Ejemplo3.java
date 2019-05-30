@@ -25,7 +25,7 @@ public class Ejemplo3 {
         if(cantidad <=100){
             datos[0] = datos[0] + 1;
         }else{
-            if(cantidad>=101 && cantidad <=199){
+            if(cantidad>=101 && cantidad <=1999){
                 datos[1] = datos[1] + 1;
             }else{
                 datos[2] = datos[2] + 1;
